@@ -1,0 +1,34 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Associação entre CAPAG alta e investimento relativo},
+note{}={Erros-padrão robustos à heterocedasticidade entre parênteses. *, ** e *** indicam significância a 10\%, 5\% e 1\%, respectivamente.},
+note{ }={Fonte: FINBRA, Tesouro Nacional, IBGE e TSE. Elaboração própria.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={3-6}{solid, black, 0.03em},
+hline{2}={2}{solid, black, 0.03em, l=-0.5},
+hline{3}={1-6}{solid, black, 0.05em},
+hline{5}={1-6}{solid, black, 0.05em},
+hline{1}={1-6}{solid, black, 0.08em},
+hline{11}={1-6}{solid, black, 0.08em},
+hline{7}={1-6}{solid, black, 0.1em},
+column{3-6}={}{halign=c},
+cell{1}{1}={}{halign=c},
+cell{1}{2}={c=5}{halign=c},
+cell{2-10}{1}={}{halign=l},
+cell{2-10}{2}={}{halign=c},
+}                     %% tabularray inner close
+& Investimento Relativo &  &  &  &  \\
+& (1) & (2) & (3) & (4) & (5) \\
+CAPAG Alta & 0.020*** & 0.011*** & 0.011*** & 0.011*** & 0.010*** \\
+& (0.002) & (0.002) & (0.002) & (0.002) & (0.002) \\
+$R^2$ & 0.02 & 0.19 & 0.20 & 0.21 & 0.21 \\
+Observações & 5465 & 5465 & 5465 & 5465 & 5465 \\
+Características do município & Não & Sim & Sim & Sim & Sim \\
+Características do prefeito & Não & Não & Sim & Sim & Sim \\
+Contexto político & Não & Não & Não & Sim & Sim \\
+Necessidade de infraestrutura & Não & Não & Não & Não & Sim \\
+\end{talltblr}
+\end{table}

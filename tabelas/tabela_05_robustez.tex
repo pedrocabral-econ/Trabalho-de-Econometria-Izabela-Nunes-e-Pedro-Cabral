@@ -1,0 +1,32 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Testes de robustez},
+note{}={Erros-padrão robustos à heterocedasticidade entre parênteses. *, ** e *** indicam significância a 10\%, 5\% e 1\%, respectivamente.},
+note{ }={A coluna (1) é o modelo de referência. Todas as colunas incluem os mesmos controles e efeito fixo de UF.},
+note{  }={Fonte: FINBRA, Tesouro Nacional, IBGE e TSE. Elaboração própria.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]},
+hline{2}={3}{solid, black, 0.03em},
+hline{2}={2,5}{solid, black, 0.03em, l=-0.5},
+hline{2}={4}{solid, black, 0.03em, r=-0.5},
+hline{3}={1-5}{solid, black, 0.05em},
+hline{5}={1-5}{solid, black, 0.05em},
+hline{1}={1-5}{solid, black, 0.08em},
+hline{8}={1-5}{solid, black, 0.08em},
+column{3-5}={}{halign=c},
+cell{1}{1}={}{halign=c},
+cell{1}{2}={c=3}{halign=c},
+cell{2-7}{1}={}{halign=l},
+cell{2-7}{2}={}{halign=c},
+}                     %% tabularray inner close
+& Investimento Relativo &  &  & Log Inv. per capita \\
+& (1) & (2) & (3) & (4) \\
+CAPAG Alta & 0.010*** & 0.011*** & 0.013*** & 0.220*** \\
+& (0.002) & (0.002) & (0.002) & (0.021) \\
+$R^2$ & 0.21 & 0.25 & 0.23 & 0.41 \\
+Observações & 5465 & 5355 & 4251 & 5464 \\
+Amostra & Completa & Sem outliers & Sem n.d./n.e. & Inv. pc > 0 \\
+\end{talltblr}
+\end{table}

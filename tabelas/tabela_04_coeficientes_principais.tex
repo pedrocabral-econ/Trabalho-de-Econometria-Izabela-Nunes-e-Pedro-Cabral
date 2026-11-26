@@ -1,0 +1,32 @@
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Coeficientes principais do modelo completo},
+note{}={Erros-padrão robustos à heterocedasticidade entre parênteses. *, ** e *** indicam significância a 10\%, 5\% e 1\%, respectivamente.},
+note{ }={Fonte: FINBRA, Tesouro Nacional, IBGE e TSE. Elaboração própria.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]},
+hline{2}={2}{solid, black, 0.03em, l=-0.5},
+hline{3}={1-2}{solid, black, 0.05em},
+hline{11}={1-2}{solid, black, 0.05em},
+hline{1}={1-2}{solid, black, 0.08em},
+hline{13}={1-2}{solid, black, 0.08em},
+column{2}={}{halign=c},
+row{1}={}{halign=c},
+cell{2-12}{1}={}{halign=l},
+}                     %% tabularray inner close
+& Investimento Relativo \\
+& (1) \\
+CAPAG Alta & 0.010*** \\
+& (0.002) \\
+Déficit de esgoto & 0.018*** \\
+& (0.004) \\
+Troca de gestão & -0.016*** \\
+& (0.002) \\
+Aliado & 0.001 \\
+& (0.004) \\
+$R^2$ & 0.21 \\
+Observações & 5465 \\
+\end{talltblr}
+\end{table}
